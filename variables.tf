@@ -17,6 +17,17 @@ variable "instance_type" {
 }
 
 
+variable "ssh_user" {
+  default = "ubuntu"
+  description = ""
+}
+
+variable "rds_pass" {
+  default = "password"
+  description = ""
+}
+
+
 variable "tags" {
   default = {
     name = "tr-01-frontend"
